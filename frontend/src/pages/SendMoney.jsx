@@ -11,7 +11,7 @@ export const SendMoney = () => {
 
     const transferHandler = async()=>{
         
-        const res= await axios.post("http://localhost:3000/api/v1/account/transfer", {
+        const res= await axios.post("https://pay-tm-app-api.vercel.app/api/v1/account/transfer", {
                 to: id,
                 amount
             }, {
